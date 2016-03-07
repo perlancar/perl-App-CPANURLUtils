@@ -30,9 +30,9 @@ $SPEC{url2cpaninfo} = {
     result_naked => 1,
 };
 sub url2cpaninfo {
-    require CPAN::Info::From::URL;
+    require CPAN::Info::FromURL;
     my %args = @_;
-    [map {CPAN::Info::From::URL::extract_cpan_info_from_url($_)}
+    [map {CPAN::Info::FromURL::extract_cpan_info_from_url($_)}
          @{ $args{urls} }];
 }
 
@@ -45,9 +45,9 @@ $SPEC{url2cpanmod} = {
     result_naked => 1,
 };
 sub url2cpanmod {
-    require CPAN::Module::From::URL;
+    require CPAN::Module::FromURL;
     my %args = @_;
-    [map {CPAN::Module::From::URL::extract_cpan_module_from_url($_)}
+    [map {CPAN::Module::FromURL::extract_cpan_module_from_url($_)}
          @{ $args{urls} }];
 }
 
@@ -60,9 +60,9 @@ $SPEC{url2cpandist} = {
     result_naked => 1,
 };
 sub url2cpandist {
-    require CPAN::Dist::From::URL;
+    require CPAN::Dist::FromURL;
     my %args = @_;
-    [map {CPAN::Dist::From::URL::extract_cpan_dist_from_url($_)}
+    [map {CPAN::Dist::FromURL::extract_cpan_dist_from_url($_)}
          @{ $args{urls} }];
 }
 
@@ -75,9 +75,9 @@ $SPEC{url2cpanauthor} = {
     result_naked => 1,
 };
 sub url2cpanauthor {
-    require CPAN::Author::From::URL;
+    require CPAN::Author::FromURL;
     my %args = @_;
-    [map {CPAN::Author::From::URL::extract_cpan_author_from_url($_)}
+    [map {CPAN::Author::FromURL::extract_cpan_author_from_url($_)}
          @{ $args{urls} }];
 }
 
@@ -90,9 +90,9 @@ $SPEC{url2cpanrel} = {
     result_naked => 1,
 };
 sub url2cpanrel {
-    require CPAN::Release::From::URL;
+    require CPAN::Release::FromURL;
     my %args = @_;
-    [map {CPAN::Release::From::URL::extract_cpan_release_from_url($_)}
+    [map {CPAN::Release::FromURL::extract_cpan_release_from_url($_)}
          @{ $args{urls} }];
 }
 
