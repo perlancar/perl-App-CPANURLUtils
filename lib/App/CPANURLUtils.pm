@@ -104,6 +104,6 @@ sub url2cpanrel {
 
 This distribution contains the following utilities:
 
-# INSERT_EXECS_LISTS
+# INSERT_EXECS_LIST
 
 =cut
